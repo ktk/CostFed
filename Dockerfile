@@ -7,8 +7,8 @@ RUN cp gson-2.8.1.jar /usr/local/tomcat/lib/
 RUN cp eclipse-rdf4j-2.3.2/war/rdf4j-server.war /usr/local/tomcat/webapps/
 RUN cp eclipse-rdf4j-2.3.2/war/rdf4j-workbench.war /usr/local/tomcat/webapps/
 
-COPY target/costfed-web-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/costfed-web.war
-COPY setenv.sh /usr/local/tomcat/bin
+COPY costfed-web/target/costfed-web-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/costfed-web.war
+COPY costfed-web/setenv.sh /usr/local/tomcat/bin
 
 RUN mkdir -p /usr/local/tomcat/costfed_data/endpoints
 RUN mkdir -p /usr/local/tomcat/costfed_data/errors
