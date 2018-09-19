@@ -1,4 +1,4 @@
-cacheLocation=k:\\projects\\costfed\\cache.db
+cacheLocation=/tmp/costfed/cache.db
 workerThreads=20
 boundJoinBlockSize=20
 enforceMaxQueryTime=30
@@ -16,8 +16,7 @@ endpointProviderClass=org.aksw.simba.quetsal.configuration.EndpointListFromDirec
 quetzal.mode=ASK_DOMINANT
 quetzal.inputCommonPredThreshold=0.33
 quetzal.fedSummaries=summaries/sum-localhost.n3
-#quetzal.fedSummaries=k:\\projects\\costfed\\sake-summaries
-#quetzal.endpoints=C:\\Users\\Saleem\\Downloads\\CostFed-master\\costfed\\endpoints
+quetzal.endpoints=endpoints
 
 statementGroupOptimizerClass=org.aksw.simba.quetsal.core.JoinOrderOptimizer
 #prefixDeclarations
